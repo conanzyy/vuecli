@@ -33,6 +33,15 @@ const webpackConfig = merge(baseWebpackConfig, {
   externals: {
     jquery: "jQuery"
   },
+  // resolve: {
+  //   alias: {
+  //
+  //     // webpack 使用 jQuery，如果是自行下载的
+  //      'jquery': path.resolve(__dirname, '../src/js/jquery-1.12.0.min.js'),
+  //     // 如果使用NPM安装的jQuery
+  //     //'jquery': 'jquery'
+  //   }
+  },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
