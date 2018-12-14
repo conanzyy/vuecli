@@ -30,9 +30,9 @@ const webpackConfig = merge(baseWebpackConfig, {
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
-  externals: {
-    jquery: "jQuery"
-  },
+  // externals: {
+  //   jquery: "jQuery"
+  // },
   // resolve: {
   //   alias: {
   //

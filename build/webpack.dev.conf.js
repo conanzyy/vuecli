@@ -20,9 +20,18 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
 
-  externals: {
-    jquery: "jQuery"
-  },
+  // externals: {
+  //   jquery: "jQuery"
+  // },
+  // resolve: {
+  //   alias: {
+  //
+  //     // webpack 使用 jQuery，如果是自行下载的
+  //      'jquery': path.resolve(__dirname, '../src/js/jquery-3.3.1.min.js'),
+  //     // 如果使用NPM安装的jQuery
+  //     //'jquery': 'jquery'
+  //   }
+  // },
   // these devServer options should be customized in /config/index.js
   devServer: {
     clientLogLevel: 'warning',
