@@ -41,7 +41,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   //     // 如果使用NPM安装的jQuery
   //     //'jquery': 'jquery'
   //   }
-  },
+  // },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
