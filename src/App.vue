@@ -1,14 +1,30 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <ul>
+      <li>
+        <router-link to="/A">Go to A</router-link>
+      </li>
+      <li>
+        <router-link to="/B">Go to B</router-link>
+      </li>
+    </ul>
     <router-view/>
+    <input type="text" v-model="msg" v-show="true" v-focus/>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: '12124'
+    }
+  }
 }
+
 </script>
 
 <style>
